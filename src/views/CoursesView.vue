@@ -108,8 +108,9 @@ export default {
 
 table {
   width: 100%;
+  max-width: 900px;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin: 20px auto;
 }
 
 table th,

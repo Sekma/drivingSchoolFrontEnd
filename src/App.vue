@@ -12,9 +12,9 @@ const isCandidateRoute = computed(() => route.path.startsWith('/candidate'));
   <div>
     <nav v-if="!isAdminRoute" class="p-2 d-flex">
       <RouterLink to="/" class="nav-link ms-5">Accueil</RouterLink>
-      <RouterLink to="/candidate/courses" class="nav-link ms-2">Cours</RouterLink>
-      <RouterLink to="/candidate/reservation" class="nav-link ms-2">Réservation</RouterLink>
-      <button v-if="isCandidateRoute" @click="logout" class="btn text-danger ms-auto me-5">Déconnexion</button>
+      <RouterLink to="/candidate/courses" class="nav-link">Cours</RouterLink>
+      <RouterLink to="/candidate/reservation" class="nav-link">Réservation</RouterLink>
+      <button v-if="isCandidateRoute" @click="logout" class="btn btn-outline-danger ms-auto me-5">Déconnexion</button>
     </nav>
 
     <!-- Contenu principal -->
@@ -64,29 +64,26 @@ nav {
   font-size: 12px;
   text-align: start;
   border-bottom: 1px solid grey;
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3)
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 nav a {
   color: black;
 }
 nav a.router-link-exact-active {
   color: rgb(0, 150, 0);
+  background-color: #f8f9fa9f;
 }
 nav a:hover{
-  color: #FFA500;
+  background-color: #f8f9fa;
   transition: all 0.5;
 }
-
-
 nav a.router-link-exact-active:hover {
-  color: rgb(0, 150, 0);
-  cursor: default;
-  
+  color: rgb(0, 150, 0);  
 }
 nav a, nav button{
   display: inline-block;
   padding: 0.2rem 1rem;
-  border-left: 1px solid var(--color-border);
   font-weight: bold;
   text-decoration: none;
 }

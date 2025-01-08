@@ -7,7 +7,7 @@
         <RouterLink to="/admin" class="nav-link py-2">Accueil</RouterLink>
         <RouterLink to="/admin/candidates" class="nav-link py-2">Candidats</RouterLink>
         <RouterLink to="/admin/reservations" class="nav-link py-2">Réservations</RouterLink>
-        <button @click="logout" class="nav-link py-2 mt-auto">Logout</button>
+        <button @click="logout" class="nav-link py-2 mt-auto">Déconnexion</button>
       </nav>
       <main class="flex-fill p-4" style="margin-left: 250px; overflow-y: auto; height: 100vh;">
         <RouterView />

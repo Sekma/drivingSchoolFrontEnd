@@ -239,19 +239,20 @@ export default {
 .reservation {
   padding: 10px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  gap: 100px;
+  justify-content: start;
+  align-items: start;
 }
 
 .calendar {
   width: 100%;
+  margin: 50px;
   max-width: 500px;
   border: 1px solid #ccc;
   background: #fff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   overflow: hidden;
-  text-align: left;
 }
 .calendar-header {
   display: flex;
