@@ -20,5 +20,11 @@ export default {
         color: rgb(0, 0, 0);
         background-color: rgba(255, 255, 255, 0.3);
         text-decoration: none;
+        transition: all 0.5s;
+    }
+    div a:hover{
+        height: 175px;
+        color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
     }
 </style>

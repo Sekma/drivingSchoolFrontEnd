@@ -17,16 +17,16 @@
       <table>
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Nom du candidat</th>
-            <th>Date</th>
-            <th>Créneau horaire</th>
-            <th>Statut</th>
-            <th>Actions</th>
+            <th class="bg-info fw-bold">ID</th>
+            <th class="bg-info fw-bold">Nom du candidat</th>
+            <th class="bg-info fw-bold">Date</th>
+            <th class="bg-info fw-bold">Créneau horaire</th>
+            <th class="bg-info fw-bold">Statut</th>
+            <th class="bg-info fw-bold">Actions</th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="reservation in reservations" :key="reservation.id">
+          <tr v-for="reservation in reservations" :key="reservation.id" class="border border-info">
             <td>{{ reservation.id }}</td>
             <td>{{ reservation.candidate.name }}</td>
             <td>{{ reservation.date }}</td>
@@ -124,13 +124,8 @@
   }
   
   th, td {
-    border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
-  }
-  
-  th {
-    background-color: #f4f4f4;
   }
   
   button {

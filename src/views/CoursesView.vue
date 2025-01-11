@@ -1,5 +1,6 @@
 <template>
   <div class="reservations-container">
+    <h4>Bonjour <span class="text-primary">{{ candidateName }}</span> ..!</h4>
     <h4 class="text-center">Mes Réservations</h4>
 
     <!-- Vérifier s'il y a des réservations -->
@@ -39,6 +40,7 @@ import axios from "axios";
 export default {
   data() {
     return {
+      candidateName: '', // Pour stocker le nom du candidat
       reservations: [], // Liste des réservations
     };
   },
@@ -96,6 +98,9 @@ export default {
   },
   mounted() {
     this.fetchReservationsByCandidate(); // Récupérer les réservations au chargement de la page
+     
+    // Récupérer le nom du candidat depuis localStorage
+    this.candidateName = localStorage.getItem("candidateName");
   },
 };
 </script>
@@ -121,10 +126,12 @@ table td {
 }
 
 table th {
-  background-color: #f4f4f4;
+  background-color: #9ecfff;
   color: #333;
 }
-
+table td{
+  background-color: #f9f9f9;
+}
 .status-pending {
   color: orange;
 }

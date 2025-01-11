@@ -14,8 +14,8 @@
           <label for="password">Mot de passe</label>
           <input type="password" id="password" v-model="password" class="form-control" required />
         </div>
-        <button type="submit" class="btn btn-success">Créer</button>
-        <button @click.prevent="goBack" class="btn btn-secondary ml-2">Annuler</button>
+        <button type="submit" class="btn btn-success mt-2">Créer</button>
+        <button @click.prevent="goBack" class="btn btn-secondary ms-2 mt-2">Annuler</button>
       </form>
     </div>
   </template>

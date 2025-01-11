@@ -1,6 +1,6 @@
 <template>
     <div class="d-flex bg-light">
-      <nav class="admin-nav d-flex flex-column bg-white text-center p-3" style="width: 250px; height: 100vh; position: fixed;">
+      <nav class="admin-nav d-flex flex-column bg-info bg-gradient text-center p-3" style="width: 250px; height: 100vh; position: fixed;">
         <div class="logo p-3 my-5">
           <!-- logo -->
         </div>
@@ -50,9 +50,7 @@
   </script>
   
   <style scoped>
-  .admin-nav {
-    background-color: #9ecfff !important;
-  }
+
   
   .nav-link {
     text-decoration: none;

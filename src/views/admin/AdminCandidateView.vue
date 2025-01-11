@@ -1,14 +1,14 @@
 <template>
     <div class="admin-candidates">
       <h1>Liste des Candidats</h1>
-      <button @click="goToCreateForm" class="btn btn-primary mb-4">Créer un nouveau candidat</button>
+      <button @click="goToCreateForm" class="btn btn-success mb-4">Créer un nouveau candidat</button>
       <table class="table">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Nom</th>
-            <th>Pseudo</th>
-            <th>Delete</th>
+            <th class="bg-info fw-bold">#</th>
+            <th class="bg-info fw-bold">Nom</th>
+            <th class="bg-info fw-bold">Pseudo</th>
+            <th class="bg-info fw-bold">Delete</th>
           </tr>
         </thead>
         <tbody>

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h4>Bonjour <span class="text-primary">{{ candidateName }}</span> ..!</h4>
   <div class="reservation">
     <!-- Intégration du calendrier -->
     <div class="calendar">
@@ -310,11 +311,14 @@ export default {
 .time-slots th,
 .time-slots td {
   padding: 5px;
-  border: 1px solid #9ecfff;
+  border: 1px solid #ddd;
   text-align: center;
 }
 .time-slots th{
   background-color: #9ecfff;
+}
+.time-slots td{
+  background-color: #f9f9f9;
 }
 .time-slots button {
   padding: 5px 10px;
